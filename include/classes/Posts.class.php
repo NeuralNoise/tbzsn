@@ -7,8 +7,11 @@ class Posts {
 
         $posts = Array();
         while($row = $res->fetch_assoc()){
-            $posts[] = new Post($row);
-        }
+            if($row['type'] == 10){
+              $posts[] = new Textpost($row);
+            }else if($row['type'] == 20)
+            $posts[] = new Imagepost($row);
+            }
 
         return $posts;
     }
@@ -20,11 +23,15 @@ class Posts {
 
         $posts = Array();
         while($row = $res->fetch_assoc()){
-            $posts[] = new Post($row);
+            if($row['type'] == 10){
+              $posts[] = new Textpost($row);
+            }else if($row['type'] == 20)
+            $posts[] = new Imagepost($row);
+            }
         }
 
         return $posts;
-    
+
     }
 }
 ?>

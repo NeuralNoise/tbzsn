@@ -24,13 +24,24 @@ class Post {
      * @var String
      */
     private $groupid;
+    /**
+    * Type of Post (10 for text, 20 for image)
+    * @var Int
+    */
+    private $type;
+    /**
+    * Creation Date
+    * @var Date
+    */
+    private $creationdate;
 
     function __construct($arr){
         $this->visibility = $arr['visibility'];
         $this->likes = $arr['likes'];
         $this->owner = $arr['owner'];
         $this->groupid = $arr['groupid'];
-
+        $this->type = $arr['type'];
+        $this->creationdate = $arr['creationdate'];
         return $this;
     }
 
@@ -97,6 +108,45 @@ class Post {
     public function setGroupid($groupid) {
         $this->groupid = $groupid;
     }
+    /**
+     * Set the value of Userid from the Postowner
+     */
+    public function setOwner($owner) {
+        $this->owner = $owner;
+    }
+
+    /**
+     * Get the value of Type
+     *
+     * @return Int
+     */
+    public function getType(){
+        return $this->type;
+    }
+
+    /**
+     * Set the value of Type
+     */
+    public function setType($type) {
+        $this->type = $type;
+    }
+
+    /**
+     * Get the value of Creationdate
+     *
+     * @return Date
+     */
+    public function getCreationdate(){
+        return $this->creationdate;
+    }
+
+    /**
+     * Set the value of Creationdate
+     */
+    public function getCreationdate($creationdate) {
+        $this->creationdate = $creationdate;
+    }
+
 
 }
  ?>
