@@ -14,6 +14,7 @@ class Textpost extends Post {
 	function __construct($arr){
 		$this->text = $arr['text'];
 		parent::__construct($arr);
+		return $this;
 	}
 
 	public function getText(){

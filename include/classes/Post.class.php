@@ -4,6 +4,12 @@
  * @author happyoniens
  */
 class Post {
+
+  /**
+   * Id of Post
+   * @var String
+   */
+    private $id;
     /**
      * Visibility of Post
      * @var int
@@ -36,6 +42,7 @@ class Post {
     private $creationdate;
 
     function __construct($arr){
+        $this->id = $arr['postid'];
         $this->visibility = $arr['visibility'];
         $this->likes = $arr['likes'];
         $this->owner = $arr['owner'];
@@ -43,6 +50,21 @@ class Post {
         $this->type = $arr['type'];
         $this->creationdate = $arr['creationdate'];
         return $this;
+    }
+    /**
+     * Get the value of Postid
+     *
+     * @return String
+     */
+    public function getPostid(){
+        return $this->postid;
+    }
+
+    /**
+     * Set the value of Postid
+     */
+    public function setVisibility($postid) {
+        $this->postid = $postid;
     }
 
     /**

@@ -8,6 +8,7 @@ class Imagepost extends Post {
 		$this->images = explode(";",$arr['images']);
 		$this->text = $arr['text'];
 		parent::__construct($arr);
+		return $this;
 	}
 
 	public function getImages(){
