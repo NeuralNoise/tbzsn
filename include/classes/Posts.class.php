@@ -8,9 +8,11 @@ class Posts {
         $posts = Array();
         while($row = $res->fetch_assoc()){
             if($row['type'] == 10){
-              $posts[] = new Textpost($row);
+              $tp = new Textpost();
+              $posts[] = $tp->initialize($row);
             }else if($row['type'] == 20)
-            $posts[] = new Imagepost($row);
+              $ip = new Imagepost();
+              $posts[] = $ip->initialize($row);
             }
 
         return $posts;
@@ -24,9 +26,11 @@ class Posts {
         $posts = Array();
         while($row = $res->fetch_assoc()){
             if($row['type'] == 10){
-              $posts[] = new Textpost($row);
+              $tp = new Textpost();
+              $posts[] = $tp->initialize($row);
             }else if($row['type'] == 20)
-            $posts[] = new Imagepost($row);
+              $ip = new Imagepost();
+              $posts[] = $ip->initialize($row);
             }
         }
 

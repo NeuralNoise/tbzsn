@@ -4,7 +4,7 @@ class Imagepost extends Post {
 	private $images = Array();
 	private $text;
 
-	function __construct($arr){
+	function initialize($arr){
 		$this->images = explode(";",$arr['images']);
 		$this->text = $arr['text'];
 		parent::__construct($arr);

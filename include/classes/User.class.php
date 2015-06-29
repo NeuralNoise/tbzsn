@@ -26,7 +26,7 @@ class User {
      */
     private $email;
 
-    function __construct($arr){
+    function initialize($arr){
         $this->userid = $arr['userid'];
         $this->username = $arr['username'];
         $this->password = $arr['password'];

@@ -41,7 +41,7 @@ class Post {
     */
     private $creationdate;
 
-    function __construct($arr){
+    function initialize($arr){
         $this->id = $arr['postid'];
         $this->visibility = $arr['visibility'];
         $this->likes = $arr['likes'];
