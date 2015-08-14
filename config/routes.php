@@ -1,6 +1,7 @@
 <?php
 \Flight::route('/', function() {
-	echo 'Hello World!';
+	\Flight::render('welcomeView',array('name'=>'TBZSN'),'body_content');
+	\Flight::render('layout');
 });
 
 \Flight::map('notFound', function() {
