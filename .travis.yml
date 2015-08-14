@@ -11,7 +11,3 @@ before_install:
     composer self-update
 install:
     composer install
-before_script:
-    - mysql -e 'create database tbzsn;'
-script:
-    phinx migrate -e travis
