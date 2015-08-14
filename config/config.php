@@ -4,8 +4,7 @@
 
 $connection = new PDO('mysql:host=localhost;dbname=tbzsn', 'root', '');
 
-$h = new \ClanCats\Hydrahon\Builder('mysql', function($query, $queryString, $queryParameters) use($connection)
-{
+$db = new \ClanCats\Hydrahon\Builder('mysql', function($query, $queryString, $queryParameters) use($connection) {
     $statement = $connection->prepare($queryString);
     $statement->execute($queryParameters);
 
@@ -15,4 +14,4 @@ $h = new \ClanCats\Hydrahon\Builder('mysql', function($query, $queryString, $que
     }
 });
 
-echo $h->table('users')->select('username')->count();
+echo $db->table('users')->select('username')->count();
