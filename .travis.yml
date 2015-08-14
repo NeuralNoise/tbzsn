@@ -8,4 +8,5 @@ php:
 notifications:
   slack: tbzsn:2OAGYmBzMMTEUIUjwKIHToRl
 install:
+    composer self-update
     composer install
