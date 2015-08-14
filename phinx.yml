@@ -22,11 +22,11 @@ environments:
         port: 3306
         charset: utf8
 
-    testing:
+    travis:
         adapter: mysql
         host: localhost
         name: testing_db
-        user: root
+        user: travis
         pass: ''
         port: 3306
         charset: utf8
