@@ -22,8 +22,14 @@ a {
 	height: $font-size * 2 + $nav-padding * 2;
 }
 
-#logo {
-	font-size: $font-size * 2;
+#navigation form {
+	text-align: right;
+}
+
+#navigation form input {
+	padding: 4px;
+	margin: 4px 0;
+	border: 1px solid $border-gray;
 }
 
 #navigation ul {
@@ -31,20 +37,28 @@ a {
 	margin: auto;
 	border-right: 1px solid $border-gray;
 	list-style-type: none;
+	height: $font-size * 2 + $nav-padding * 2;
 }
 
 #navigation ul li {
-	float: right;
+	float: left;
 	border-left: 1px solid $border-gray;
 }
 
 #navigation ul li a {
 	display: inline-block;
-	padding: $nav-padding;
+	padding: $nav-padding 0;
+	width: 80px;
+	text-align: center;
 }
 
 #navigation ul li form {
 	display: inline-block;
 	padding: $nav-padding;
-	width: 100%;
+	width: 667px;
+}
+
+#logo {
+	font-size: $font-size * 2;
+	width: 160px !important;
 }
