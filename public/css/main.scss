@@ -1,0 +1,50 @@
+$blue: #00a0e5;
+$white: #fff;
+$black: #333;
+$border-gray: #e0e0e0;
+
+$font-size: 16px;
+$nav-padding: 24px;
+
+body {
+	font: $font-size HelveticaNeue,sans-serif;
+	margin: 0;
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+}
+
+#navigation {
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+	color: $black;
+	height: $font-size * 2 + $nav-padding * 2;
+}
+
+#logo {
+	font-size: $font-size * 2;
+}
+
+#navigation ul {
+	width: 1120px;
+	margin: auto;
+	border-right: 1px solid $border-gray;
+	list-style-type: none;
+}
+
+#navigation ul li {
+	float: right;
+	border-left: 1px solid $border-gray;
+}
+
+#navigation ul li a {
+	display: inline-block;
+	padding: $nav-padding;
+}
+
+#navigation ul li form {
+	display: inline-block;
+	padding: $nav-padding;
+	width: 100%;
+}
