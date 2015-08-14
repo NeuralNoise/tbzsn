@@ -7,6 +7,7 @@ php:
   - nightly
 notifications:
   slack: tbzsn:2OAGYmBzMMTEUIUjwKIHToRl
+  email: false
 before_install:
     composer self-update
 install:
