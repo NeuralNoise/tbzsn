@@ -25,7 +25,7 @@ environments:
     travis:
         adapter: mysql
         host: localhost
-        name: testing_db
+        name: tbzsn
         user: travis
         pass: ''
         port: 3306
