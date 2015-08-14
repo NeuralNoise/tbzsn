@@ -9,9 +9,8 @@ class CreateUser extends AbstractMigration
      */
     public function up()
     {
-        $table = $this->table('user');
         $users = $this->table('users');
-       $users->addColumn('username', 'string', array('limit' => 20))
+        $users->addColumn('username', 'string', array('limit' => 20))
              ->addColumn('password', 'string', array('limit' => 64))
              ->addColumn('email', 'string', array('limit' => 100))
              ->addColumn('created', 'datetime')

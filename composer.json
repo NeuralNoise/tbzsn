@@ -1,6 +1,7 @@
 {
     "require": {
         "mikecao/flight": "^1.2",
-        "robmorgan/phinx": "^0.4.4"
+        "robmorgan/phinx": "^0.4.4",
+        "clancats/hydrahon": "^1.0"
     }
 }

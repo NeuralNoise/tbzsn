@@ -4,8 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9cc7bd36c128407e8c40fc4572675a37",
+    "hash": "3d548a4e70acbc48fc508822e5cdc94b",
     "packages": [
+        {
+            "name": "clancats/hydrahon",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ClanCats/Hydrahon.git",
+                "reference": "da5a676917522beb8d16dde5fa5af07dee3b2655"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ClanCats/Hydrahon/zipball/da5a676917522beb8d16dde5fa5af07dee3b2655",
+                "reference": "da5a676917522beb8d16dde5fa5af07dee3b2655",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ClanCats\\Hydrahon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mario Döring",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Fast and simple Query Builder without extra bacon, written in PHP.",
+            "homepage": "https://github.com/ClanCats/Hydrahon",
+            "keywords": [
+                "builder",
+                "database",
+                "mysql",
+                "query",
+                "sqlite"
+            ],
+            "time": "2015-07-19 20:02:24"
+        },
         {
             "name": "mikecao/flight",
             "version": "v1.2.13",
