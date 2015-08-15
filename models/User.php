@@ -3,43 +3,52 @@
  *  Userclass
  *  @author happyoniens
  */
-class User {
+class User
+{
+
     /**
      * Userid
      * @var String
      * @example b4148d18
      */
-    private $userid;
+    private $_userId;
+
     /**
      * Username
      * @var String
      */
-    private $username;
+    private $_username;
+
     /**
      * Password encrypted with SHA 256
      * @var String
      */
-    private $password;
+    private $_password;
+
     /**
      * Email
      * @var String
      */
-    private $email;
+    private $_email;
 
-    function initialize($arr){
-        $this->userid   = $arr['userid'];
-        $this->username = $arr['username'];
-        $this->password = $arr['password'];
-        $this->email    = $arr['email'];
+    private function _initialize($arr) {
+
+        $this->_userId   = $arr['userid'];
+        $this->_username = $arr['username'];
+        $this->_password = $arr['password'];
+        $this->_email    = $arr['email'];
 
         return $this;
     }
 
     public function __set($name, $value) {
+
         $this->$name = $value;
     }
 
     public function __get($name) {
+
         return $this->$name;
     }
+
 }

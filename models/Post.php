@@ -3,60 +3,71 @@
  * Postclass
  * @author happyoniens
  */
-class Post {
+class Post
+{
 
-  /**
+    /**
    * Id of Post
    * @var String
    */
-    private $id;
+    private $_id;
+
     /**
      * Visibility of Post
      * @var int
      */
-    private $visibility;
+    private $_visibility;
+
     /**
      * Count of likes
      * @var int
      */
-    private $likes;
+    private $_likes;
+
     /**
      * Userid from the Postowner
      * @var String
      */
-    private $owner;
+    private $_owner;
+
     /**
      * Groupid
      * @var String
      */
-    private $groupid;
+    private $_groupId;
+
     /**
     * Type of Post (10 for text, 20 for image)
     * @var Int
     */
-    private $type;
+    private $_type;
+
     /**
     * Creation Date
     * @var Date
     */
-    private $creationdate;
+    private $_creationDate;
 
-    function initialize($arr) {
-        $this->id           = $arr['postid'];
-        $this->visibility   = $arr['visibility'];
-        $this->likes        = $arr['likes'];
-        $this->owner        = $arr['owner'];
-        $this->groupid      = $arr['groupid'];
-        $this->type         = $arr['type'];
-        $this->creationdate = $arr['creationdate'];
+    private function _initialize($arr) {
+
+        $this->_id           = $arr['postid'];
+        $this->_visibility   = $arr['visibility'];
+        $this->_likes        = $arr['likes'];
+        $this->_owner        = $arr['owner'];
+        $this->_groupId      = $arr['groupid'];
+        $this->_type         = $arr['type'];
+        $this->_creationDate = $arr['creationdate'];
         return $this;
     }
 
     public function __set($name, $value) {
+
         $this->$name = $value;
     }
 
     public function __get($name) {
+
         return $this->$name;
     }
+
 }

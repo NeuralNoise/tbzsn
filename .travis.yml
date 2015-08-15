@@ -15,4 +15,5 @@ install:
 before_script:
     - mysql -e 'create database tbzsn;'
 script:
-    vendor/bin/phinx migrate -e travis
+    - vendor/bin/phinx migrate -e travis
+    - vendor/bin/phpcs --standard=phpcs.xml controllers/ models/
