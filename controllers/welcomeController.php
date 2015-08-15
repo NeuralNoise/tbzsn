@@ -1,9 +1,21 @@
 <?php
+
+/**
+ * A test controller
+ *
+ * @category Controllers
+ * @package
+ */
 class welcomeController
 {
-    public static function welcome()
-    {
-        \Flight::render('welcomeView', array('name'=>'TBZSN'), 'body_content');
+
+    /**
+     * Renders an example view
+     */
+    public static function welcome() {
+
+        \Flight::render('welcomeView', array('name' => 'TBZSN'), 'body_content');
         \Flight::render('layout');
     }
+
 }
