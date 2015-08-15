@@ -3,9 +3,10 @@
  * Postclass
  * @author happyoniens
  */
-class Post {
+class Post
+{
 
-  /**
+    /**
    * Id of Post
    * @var String
    */
@@ -41,7 +42,8 @@ class Post {
     */
     private $creationdate;
 
-    function initialize($arr) {
+    function initialize($arr) 
+    {
         $this->id           = $arr['postid'];
         $this->visibility   = $arr['visibility'];
         $this->likes        = $arr['likes'];
@@ -52,11 +54,13 @@ class Post {
         return $this;
     }
 
-    public function __set($name, $value) {
+    public function __set($name, $value) 
+    {
         $this->$name = $value;
     }
 
-    public function __get($name) {
+    public function __get($name) 
+    {
         return $this->$name;
     }
 }

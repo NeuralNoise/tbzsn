@@ -3,7 +3,8 @@
  *  Userclass
  *  @author happyoniens
  */
-class User {
+class User
+{
     /**
      * Userid
      * @var String
@@ -26,7 +27,8 @@ class User {
      */
     private $email;
 
-    function initialize($arr){
+    function initialize($arr)
+    {
         $this->userid   = $arr['userid'];
         $this->username = $arr['username'];
         $this->password = $arr['password'];
@@ -35,11 +37,13 @@ class User {
         return $this;
     }
 
-    public function __set($name, $value) {
+    public function __set($name, $value) 
+    {
         $this->$name = $value;
     }
 
-    public function __get($name) {
+    public function __get($name) 
+    {
         return $this->$name;
     }
 }
