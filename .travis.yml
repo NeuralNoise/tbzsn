@@ -16,4 +16,4 @@ before_script:
     - mysql -e 'create database tbzsn;'
 script:
     - vendor/bin/phinx migrate -e travis
-    - vendor/bin/phpcs --standard=PSR2 controllers/ models/
+    - vendor/bin/phpcs --standard=phpcs.xml controllers/ models/
