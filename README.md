@@ -7,6 +7,8 @@
 - Composer
 - PHP
 - MYSQL
+- NPM
+- Grunt
 
 ###Migrations:
 Migrate
