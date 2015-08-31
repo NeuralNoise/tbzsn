@@ -11,7 +11,6 @@
 * [Branch] - Create a branch from our "master"-branch first
 * [PR] - Make a pull-request after editing the project
 * [Merging] - If someone of the project team accepts the pull request, it will get merged
-
 * [Coding Guidelines] - We have some
 
 ## Grunt
