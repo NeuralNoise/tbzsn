@@ -10,13 +10,25 @@ module.exports = function(grunt) {
         bin: 'vendor/bin/phpcs',
         standard: 'phpcs.xml'
         }
+    },
+    sass: {
+        dist: {
+          options: {
+            style: 'compressed'
+          },
+          files: {
+            'public/css/main.css': 'public/css/main.scss'
+          }
+        }
     }
   });
 
   // Load plugins
  grunt.loadNpmTasks('grunt-phpcs');
+ grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task(s).
   grunt.registerTask('default', ['phpcs']);
+  grunt.registerTask('design',['sass']);
 
 };
